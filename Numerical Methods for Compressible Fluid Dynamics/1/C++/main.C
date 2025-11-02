@@ -82,3 +82,35 @@ int main() {
 
     return 0;
 }
+
+/*
+
+
+Things to be able to do:
+
+* 1D numerical simulations
+    * u -> u data, (1d for now, but future should be able to template higher dim u), 1 spatial dim
+    * flux data! conservative schemes.
+    * able to pass in different "solvers", via enum or via fn.
+    * methods:
+        * batch experiment -- pass in a family of simulations.
+            maybe have an experiment class?
+
+design goals:
+    * framework to easily express different schemes -- conservative, non-conservative, half-step, full-step.
+        * different boundary conditions
+    * easy to get graphics & output. in  particular,
+        * variations in input:
+            * choice of scheme,
+            * parameters:
+                * N
+                * speed of sound
+                * ...
+        * variations in output:
+            * (final) error
+                * L1? ...
+            * solution indexed by time
+            * final solution
+
+*/
+
