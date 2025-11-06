@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# Vim swap files
+*.swp
+*.swo
+
+# Compiled binaries
+bin/
+*.o
+*.out
+generalized_main
+main
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Output data
+Output/
+*.dat
